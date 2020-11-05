@@ -1,23 +1,25 @@
 {
-  "name": "js-22",
+  "name": "goit-js-hw-11-timer",
   "version": "1.0.0",
-  "description": "- Асинхронность в JavaScript   - Однопоточность и многопоточность   - Отоложенные вызовы (планирование)   - Web workers для «многопоточности»   - Service workers для «перехвата» запросов от документа (кеширование)   - [Статья](https://bitsofco.de/web-workers-vs-service-workers-vs-worklets) - Планирование: window.setTimeout() и window.setInterval() - Цикл событий (event loop)   - [Площадка](http://latentflip.com/loupe)   - setTimeout(N) и setTimeout(0) - Мастерская: оповещение - Мастерская: «надоедалка» подписки   - Bootstrap для CSS   - Bootstrap Native для JS - Встроенный объект Date   - Создание   - Разница времени   - Date.now() и new Date().getTime()   - [Библиотека date-fns](https://date-fns.org/) - Мастерская: таймер",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html"
+    "build": "parcel build src/*.html",
+     "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luxplanjay/js-22.git"
+    "url": "git+https://github.com/abakarovmaks/goit-js-hw-11-timer.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Абакаров Максим <abakarovmaks@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/luxplanjay/js-22/issues"
+    "url": "https://github.com/abakarovmaks/goit-js-hw-11-timer/issues"
   },
-  "homepage": "https://github.com/luxplanjay/js-22#readme",
+  "homepage": "https://abakarovmaks.github.io/goit-js-hw-11-timer",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-nuke-dist": "^1.0.1"
@@ -25,6 +27,7 @@
   "dependencies": {
     "@barba/core": "^2.9.7",
     "bootstrap.native": "^3.0.13",
+    "gh-pages": "^3.1.0",
     "lodash.throttle": "^4.1.1",
     "prettier": "^2.1.2"
   }
