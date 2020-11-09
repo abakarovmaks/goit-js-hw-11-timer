@@ -1,4 +1,4 @@
-import './css/common.css';
+import './css/common.scss';
 import CountdownTimer from './js/timer';
 
 const timer = new CountdownTimer({

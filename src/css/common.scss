@@ -10,7 +10,11 @@ body {
   line-height: 1.5;
   color: rgb(252, 247, 0);
   background-color: rgb(121, 121, 121);
-  font-size: 23px;
+  font-size: 15px;
+
+  @media screen and (min-width: 560px) {
+    font-size: 20px;
+  }
 }
 
 .timer {
@@ -26,19 +30,30 @@ body {
 }
 
 .field:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 20px;
+
+  @media screen and (min-width: 560px) {
+    margin-right: 50px;
+  }
 }
 
 .value {
+  height: 100px;
   display: inherit;
   justify-content: center;
-  padding: 20px;
+  align-items: center;
+  padding: 10px;
 
   background-color: rgb(5, 13, 17);
   color: white;
   border-radius: 10px;
 
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bold;
   border: 3px solid rgb(252, 247, 0);
+
+  @media screen and (min-width: 560px) {
+    font-size: 50px;
+    padding: 20px;
+  }
 }
