@@ -24,15 +24,10 @@ body {
 .timer {
   display: flex;
   justify-content: center;
-  padding: 100px;
-  margin-top: 150px;
-
-  @media screen and (min-width: 768px) {
-    margin-top: 50px;
-  }
+  padding: 30px;
 
   @media screen and (min-width: 1200px) {
-    margin-top: 200px;
+    padding-top: 50px;
   }
 }
 
@@ -77,5 +72,37 @@ body {
   @media screen and (min-width: 1200px) {
     font-size: 80px;
     padding: 40px;
+  }
+}
+
+.new-year {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-shadow: red 2px 2px 5px, red 2px 2px 5px, red 2px 2px 5px,
+    red 2px 2px 5px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 60px;
+  }
+}
+
+.container {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 180px;
   }
 }
