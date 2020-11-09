@@ -20,7 +20,12 @@ body {
 .timer {
   display: flex;
   justify-content: center;
-  padding: 50px;
+  padding: 100px;
+  margin-top: 150px;
+
+  @media screen and (min-width: 560px) {
+    margin-top: 200px;
+  }
 }
 
 .field {
