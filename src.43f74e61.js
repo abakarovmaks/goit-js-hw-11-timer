@@ -5,4 +5,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./css/common.scss");var e=r(require("./js/timer"));function r(e){return e&&e.__esModule?e:{default:e}}var t=new e.default({selector:"#timer-1",targetDate:new Date("Dec 31, 2020, 23:59:59")});
 },{"./css/common.scss":"xl9v","./js/timer":"yCUT"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-11-timer/src.8f230a44.js.map
+//# sourceMappingURL=/goit-js-hw-11-timer/src.43f74e61.js.map
