@@ -1,10 +1,11 @@
 export default class CountdownTimer {
-  constructor({ targetDate }) {
+  constructor({ selector, targetDate }) {
+    this.selector = selector;
     this.targetDate = targetDate;
-    this.days = document.querySelector('.value[data-value="days"]');
-    this.hours = document.querySelector('.value[data-value="hours"]');
-    this.minutes = document.querySelector('.value[data-value="mins"]');
-    this.seconds = document.querySelector('.value[data-value="secs"]');
+    this.days = document.querySelector(`${selector} [data-value="days"]`);
+    this.hours = document.querySelector(`${selector} [data-value="hours"]`);
+    this.minutes = document.querySelector(`${selector} [data-value="mins"]`);
+    this.seconds = document.querySelector(`${selector} [data-value="secs"]`);
     this.startTimer();
   }
 
